@@ -1,10 +1,9 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
 import Container from '@material-ui/core/Container';
 import { getLink } from '../../utils/getLink';
+import './DirectorMessage.css';
+
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
@@ -83,27 +82,44 @@ const DirectorMessageComponent = ({ data }) => {
           ></i>
           <h2 className={classes.MessageHeader}>{data.title}</h2>
         </div>
-        <h3>
+        <h3
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            padding: 5,
+          }}
+        >
           <hr style={{ width: '60%', marginBottom: 35 }} />
         </h3>
       </div>
       {data ? (
-        <Container maxWidth="lg" className={classes.textContainer}>
-          <Card className={classes.MessageContainer}>
-            <CardMedia
-              component="div"
-              className={classes.cover}
-              image={getLink(data.image)}
-            />
-            <div className={classes.details}>
-              <CardContent className={classes.content}>
-                <div style={{ fontSize: '1rem', color: 'black' }}>
-                  <p dangerouslySetInnerHTML={createDirectorMessage()} />
-                  <p>{data.name}</p>
-                </div>
-              </CardContent>
+        <Container className="director-column" spacing={2}>
+          <Container
+            item
+            xs={12}
+            sm={12}
+            md={4}
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              flexDirection: 'column',
+              gap: '12px',
+              padding: '20px 30px 3px',
+              width: 'auto',
+            }}
+          >
+            <div className="diroimg">
+              <img src={getLink(data.image)} alt="" />
             </div>
-          </Card>
+            <div className="dir-name">
+              {' '}
+              <h3>{data.name}</h3>
+            </div>
+          </Container>
+
+          <Container item xs={12} sm={12} md={8} className="dir-message">
+            <p dangerouslySetInnerHTML={createDirectorMessage()} />
+          </Container>
         </Container>
       ) : (
         ''

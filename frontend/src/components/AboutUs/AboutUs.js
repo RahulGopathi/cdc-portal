@@ -30,8 +30,19 @@ const AboutUs = ({ data }) => {
           ></i>
           <h2 className={styles.aboutUsTitle}>{data.title}</h2>
         </div>
-        <h3>
-          <hr style={{ width: '60%', marginBottom: 35 }} />
+        <h3
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            padding: 5,
+          }}
+        >
+          <hr
+            style={{
+              width: '60%',
+              marginBottom: 35,
+            }}
+          />
         </h3>
       </div>
       {data ? (

@@ -247,7 +247,13 @@ const AlumniTestimonial = ({ data }) => {
               />
               Alumni Testimonial
             </h2>
-            <h3>
+            <h3
+              style={{
+                display: 'flex',
+                justifyContent: 'center',
+                padding: 10,
+              }}
+            >
               <hr style={{ width: '60%', marginBottom: 35 }} />
             </h3>
           </div>
