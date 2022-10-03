@@ -1,7 +1,9 @@
 .hero_container {
-  background: linear-gradient(116.09deg, 
-                   rgba(12, 69, 0, 0.5) 16.29%,
-                  rgba(119, 57, 0, 0.5) 77.25%),
+  background: linear-gradient(
+      116.09deg,
+      rgba(12, 69, 0, 0.5) 16.29%,
+      rgba(119, 57, 0, 0.5) 77.25%
+    ),
     url('../../assets/loginback.jpg') center center/cover no-repeat;
   background-size: cover;
   height: 100vh;
@@ -174,4 +176,3 @@
     font-size: 14px;
   }
 }
-

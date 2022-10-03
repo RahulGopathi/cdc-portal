@@ -2,13 +2,13 @@
   margin: 0;
   padding: 0;
 }
-.director-column{
-	display: flex !important;
+.director-column {
+  display: flex !important;
   justify-content: center;
-	background-color: #f6f9f8;
-	margin-bottom: 7%;
-	padding-bottom: 2%;
-	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #f6f9f8;
+  margin-bottom: 7%;
+  padding-bottom: 2%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 @media screen and (max-width: 768px) {
@@ -19,7 +19,7 @@
 }
 
 .dir-heading h2 {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 300;
   font-size: 21px;
@@ -33,16 +33,15 @@
   box-shadow: -5px -5px 3px rgba(255, 255, 255, 0.6),
     8px 8px 12px rgba(214, 217, 216, 0.22);
   border-radius: 50%;
-  padding:30px;
+  padding: 30px;
 }
 .diroimg img {
   border-radius: 50%;
-  width:150px;
-  height:150px;
-
+  width: 150px;
+  height: 150px;
 }
 .dir-name h3 {
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -50,10 +49,10 @@
   color: #005134;
 }
 
-.dir-message{
+.dir-message {
   display: flex !important;
   align-items: center;
-  font-family: "Poppins" , sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: large;
   text-align: left;
   margin: 20px 0;
@@ -66,14 +65,14 @@
   }
 }
 
-.dir-message h1{
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 25px;
-    line-height: 16px;
-    color: #005134;
-    text-align: center;
-    margin: 20px 0;;
-    padding: 3px;
+.dir-message h1 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 16px;
+  color: #005134;
+  text-align: center;
+  margin: 20px 0;
+  padding: 3px;
 }
