@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 import Grid from '@material-ui/core/Grid';
 import logo from '../../assets/cdclogo.png';
-import iitjLogo from '../../assets/iitjKogo.png';
+import iitjLogo from '../../assets/iitjLogo.png';
 function Logout(event) {
   event.preventDefault();
   localStorage.setItem('cdc_LoggedIn', false);
