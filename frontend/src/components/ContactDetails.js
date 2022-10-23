@@ -17,6 +17,7 @@ const Volunteers = () => {
         style={{
           width: '80%',
           margin: '4rem auto auto',
+          boxShadow: '0 0 5px #404040',
         }}
       >
         <Grid
@@ -29,8 +30,7 @@ const Volunteers = () => {
           style={{
             height: '100%',
             color: '#444444',
-            background:
-              '#fafbff url(https://www.linkpicture.com/q/footer-bg_3.png) center no-repeat',
+            background: '#fafbff center no-repeat',
           }}
         >
           <b
